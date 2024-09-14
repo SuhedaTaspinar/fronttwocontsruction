@@ -68,11 +68,11 @@ const Portfolio = ({ showHeading = true }: Props) => {
 
           <div className="filters portfolio-filter">
             <ul>
-              <Link className="navbar-brand logo_h" href="/services">
-                <li className="active" data-filter="*">
+              <li className="active" data-filter="*">
+                <Link className="navbar-brand logo_h" href="/services">
                   Tümü
-                </li>
-              </Link>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="filters-content">
