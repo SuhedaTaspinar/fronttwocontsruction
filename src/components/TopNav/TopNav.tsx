@@ -20,7 +20,7 @@ const TopNav = (props: Props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/contacts/get-contact", {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/contacts/get-contact`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

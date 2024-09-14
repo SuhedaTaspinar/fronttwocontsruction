@@ -20,7 +20,7 @@ const ProjectDetail = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/projects/get-project", {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/projects/get-project`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -82,7 +82,7 @@ const ProjectDetail = () => {
             >
               <div style={{ flex: '1', maxWidth: '50%' }}>
                 <Image
-                  src={`http://localhost:5000/uploads/${project.image}`}
+                  src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}/uploads/${project.image}`}
                   alt={project.name}
                   width={600}
                   height={400}

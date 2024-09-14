@@ -22,7 +22,7 @@ const Portfolio = ({ showHeading = true }: Props) => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/services/get-service", {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/services/get-service`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -83,7 +83,7 @@ const Portfolio = ({ showHeading = true }: Props) => {
                   <div className="single_portfolio">
                     <Image width={555} height={419}
                       className="img-fluid w-100"
-                      src={`http://localhost:5000/uploads/${service.image}`}
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}/uploads/${service.image}`}
                       alt={service.description}
                     />
                     <div className="short_info">

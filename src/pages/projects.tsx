@@ -3,7 +3,6 @@ import Header from '@/components/Header/Header';
 
 import Footer from '@/components/Footer/Footer';
 import PageHeader from '@/components/PageHeader/PageHeader';
-import Portfoliotwo from '@/components/Portfolio/Portfoliotwo';
 import ProjectDetail from "@/components/Projects/ProjectDetail";
 import Services from '@/components/Services/Services';
 

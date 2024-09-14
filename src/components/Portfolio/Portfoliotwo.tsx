@@ -22,7 +22,7 @@ const Portfoliotwo = ({ showHeading = true }: Props) => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/projects/get-project", {
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/projects/get-project`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -84,7 +84,7 @@ const Portfoliotwo = ({ showHeading = true }: Props) => {
                                             width={555}
                                             height={419}
                                             className="img-fluid w-100"
-                                            src={`http://localhost:5000/uploads/${project.image}`}
+                                            src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}/uploads/${project.image}`}
                                             alt={project.name}
                                         />
                                         <div className="short_info">
