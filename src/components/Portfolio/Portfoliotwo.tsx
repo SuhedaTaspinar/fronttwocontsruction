@@ -61,7 +61,7 @@ const Portfoliotwo = ({ showHeading = true }: Props) => {
             <div className="container">
                 {showHeading && (
                     <div className="area-heading">
-                        <h3 className="line">GERÇEKLEŞTİRDİĞİMİZ SON PROJELER</h3>
+                        <h3 className="line">Son Projeler</h3>
                     </div>
                 )}
 

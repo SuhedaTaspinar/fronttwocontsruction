@@ -68,11 +68,11 @@ const Portfolio = ({ showHeading = true }: Props) => {
 
           <div className="filters portfolio-filter">
             <ul>
-              <li className="active" data-filter="*">
-                <Link className="navbar-brand logo_h" href="/services">
+              <Link className="navbar-brand logo_h" href="/projects">
+                <li className="active" data-filter="*">
                   Tümü
-                </Link>
-              </li>
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="filters-content">
@@ -96,7 +96,7 @@ const Portfolio = ({ showHeading = true }: Props) => {
                       </div>
                   ))
               ) : (
-                  <p style={{ textAlign: 'center', fontSize: '1.25rem', color: '#6b7280' }}>
+                  <p style={{textAlign: 'center', fontSize: '1.25rem', color: '#6b7280'}}>
                     Hizmet bulunamadı.
                   </p>
               )}
